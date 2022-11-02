@@ -13,6 +13,11 @@ ul {
   vertical-align: baseline;
   list-style: none;
 }
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
 :root {
   --main-color: #000000;
   --color-hover: #2196f3;
@@ -30,6 +35,8 @@ ul {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 body {
   margin: 0;
@@ -49,13 +56,18 @@ header {
 }
 .d-flex {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
 }
-.main-header {
+.header-menu {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 50px;
   align-items: center;
+}
+
+.header-info {
+  margin-left: auto;
 }
 .studio-title {
   background-color: var(--color-footer);
@@ -64,6 +76,9 @@ header {
 }
 a {
   text-decoration: none;
+}
+.logo{
+  margin-right: 93px;
 }
 
 .logo-style-first {
@@ -156,7 +171,7 @@ a {
 }
 .card-description {
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 
 .rubric {
@@ -169,8 +184,6 @@ a {
 .card-team {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-
   text-align: center;
 }
 .card {
@@ -186,7 +199,7 @@ a {
 }
 .rubric-img {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
   margin-top: 50px;
 }
 
@@ -196,6 +209,9 @@ a {
   line-height: 1.1;
   color: var(--title-color);
   margin-top: 30px;
+}
+.hidden {
+  visibility: hidden;
 }
 
 .working-name {
@@ -213,6 +229,13 @@ footer {
 }
 .logo-footer {
   color: var(--text-color);
+}
+.logo-spacing{
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-spacing{
+  margin-bottom: 9px;
 }
 
 .location {
@@ -233,6 +256,7 @@ footer {
 .btns {
   display: flex;
   justify-content: center;
+  margin-bottom: 34px;
 }
 
 .portfolio-button {
@@ -269,6 +293,7 @@ footer {
   font-size: 16px;
   line-height: 1.8;
   color: var(--color-info);
+  margin-top: 4px;
 }
 address {
   font-style: normal;
@@ -277,12 +302,10 @@ address {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 30px;
+  padding: 0 15px;
 }
-.cards {
-  margin-left: 10px;
-  margin-top: 30px;
-}
+
 .card-body {
   padding: 20px 24px;
   border-bottom: 1px solid var(--portfolio-border);

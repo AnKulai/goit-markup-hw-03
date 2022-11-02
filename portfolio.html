@@ -18,19 +18,21 @@
 
   <body>
     <header>
-      <nav class="d-flex">
-        <a href="logo">
-          <span class="logo-style-first">Web</span>
-          <span class="logo-style-second">Studio</span></a
-        >
-        <ul class="main-header">
-          <li><a class="menu" href="index.html">Студія</a></li>
-          <li>
-            <a class="menu menu-active" href="portfolio.html"> Портфоліо</a>
-          </li>
-          <li><a class="menu" href="/contact">Контакти</a></li>
-        </ul>
-        <ul class="main-header">
+      <div class="container d-flex">
+        <nav class="d-flex">
+          <a class="logo" href="logo">
+            <span class="logo-style-first">Web</span>
+            <span class="logo-style-second">Studio</span></a
+          >
+          <ul class="header-menu">
+            <li><a class="menu" href="index.html">Студія</a></li>
+            <li>
+              <a class="menu menu-active" href="portfolio.html"> Портфоліо</a>
+            </li>
+            <li><a class="menu" href="/contact">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="header-info d-flex">
           <li>
             <a class="information" href="malito:info@devstudio"
               >info@devstudio.com</a
@@ -40,12 +42,13 @@
             <a class="information" href="tel:+380961111111">+380961111111</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
+
     <main>
-      <div class="container">
-        <section class="section">
-          <!-- <h1>Портфоліо</h1> -->
+      <section class="section">
+        <div class="container">
+          <h1 class="hidden">Портфоліо</h1>
           <ul class="btns">
             <li><button class="portfolio-button" type="button">Усі</button></li>
             <li>
@@ -131,39 +134,40 @@
               </div>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container">
-        <a href="logo">
+        <a class="logo-spacing" href="logo">
           <span class="logo-style-first">Web</span
           ><span class="logo-style-second logo-footer">Studio</span></a
         >
+
+        <address>
+          <ul>
+            <li class="footer-spacing">
+              <a
+                class="location"
+                href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl"
+                target="_blank"
+                rel="noreferrer noopener"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="footer-spacing">
+              <a class="info-footer" href="malito:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="info-footer" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
-      <address class="container">
-        <ul>
-          <li>
-            <a
-              class="location"
-              href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl"
-              target="_blank"
-              rel="noreferrer noopener"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a class="info-footer" href="malito:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="info-footer" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
     </footer>
   </body>
 </html>

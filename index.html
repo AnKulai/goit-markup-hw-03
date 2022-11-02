@@ -18,31 +18,32 @@
   </head>
 
   <body>
-    <div class="container">
-      <header>
+    <header>
+      <div class="container d-flex">
         <nav class="d-flex">
-          <a href="logo">
+          <a class="logo" href="logo">
             <span class="logo-style-first">Web</span>
             <span class="logo-style-second">Studio</span></a
           >
-          <ul class="main-header">
+          <ul class="header-menu">
             <li><a class="menu menu-active" href="/studio">Студія</a></li>
             <li><a class="menu" href="portfolio.html"> Портфоліо</a></li>
             <li><a class="menu" href="/contact">Контакти</a></li>
           </ul>
-          <ul class="main-header">
-            <li>
-              <a class="information" href="malito:info@devstudio"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="information" href="tel:+380961111111">+380961111111</a>
-            </li>
-          </ul>
         </nav>
-      </header>
-    </div>
+        <ul class="header-info d-flex">
+          <li>
+            <a class="information" href="malito:info@devstudio"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="information" href="tel:+380961111111">+380961111111</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
     <main>
       <section class="studio-title">
         <h1 class="main-title">
@@ -52,55 +53,56 @@
         <button class="order" type="button">Замовити послугу</button>
       </section>
 
-      <div class="container">
-        <section class="section">
-          <section class="section">
-            <h2></h2>
-            <ul class="card-description">
-              <li>
-                <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                <p class="description">
-                  Ідейні міркування, і навіть початок повсякденної роботи з
-                  формування позиції.
-                </p>
-              </li>
-              <li>
-                <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
-                <p class="description">
-                  Завдання організації, особливо рамки і місце навчання кадрів
-                  тягне у себе.
-                </p>
-              </li>
-              <li>
-                <h3 class="title">ПЛАНУВАННЯ</h3>
-                <p class="description">
-                  Так само консультація з широким активом значною мірою
-                  зумовлює.
-                </p>
-              </li>
-              <li>
-                <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                <p class="description">
-                  Значимість цих проблем настільки очевидна, що реалізація
-                  планових завдань.
-                </p>
-              </li>
-            </ul>
-          </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="hidden">Контент</h2>
+          <ul class="card-description">
+            <li>
+              <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="description">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="description">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">ПЛАНУВАННЯ</h3>
+              <p class="description">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="description">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-          <section class="section">
-            <h2 class="rubric">Чим ми займаємося</h2>
-            <ul class="rubric-img">
-              <li>
-                <img src="./images/box1.jpg" alt="програма" width="370" />
-              </li>
-              <li><img src="./images/box2.jpg" alt="адаптив" width="370" /></li>
-              <li><img src="./images/box3.jpg" alt="кольори" width="370" /></li>
-            </ul>
-          </section>
-        </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="rubric">Чим ми займаємося</h2>
+          <ul class="rubric-img">
+            <li>
+              <img src="./images/box1.jpg" alt="програма" width="370" />
+            </li>
+            <li><img src="./images/box2.jpg" alt="адаптив" width="370" /></li>
+            <li><img src="./images/box3.jpg" alt="кольори" width="370" /></li>
+          </ul>
+        </div>
+      </section>
 
-        <section class="background-team section">
+      <section class="background-team section">
+        <div class="container">
           <h2 class="rubric">Наша команда</h2>
           <ul class="card-team">
             <li class="card">
@@ -124,39 +126,40 @@
               <p class="working-name">UI Designer</p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container">
-        <a href="logo">
+        <a class="logo-spacing" href="logo">
           <span class="logo-style-first">Web</span
           ><span class="logo-style-second logo-footer">Studio</span></a
         >
+
+        <address>
+          <ul>
+            <li class="footer-spacing">
+              <a
+                class="location"
+                href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl"
+                target="_blank"
+                rel="noreferrer noopener"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="footer-spacing">
+              <a class="info-footer" href="malito:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="info-footer" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
-      <address class="container">
-        <ul>
-          <li>
-            <a
-              class="location"
-              href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl"
-              target="_blank"
-              rel="noreferrer noopener"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a class="info-footer" href="malito:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="info-footer" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
     </footer>
   </body>
 </html>
