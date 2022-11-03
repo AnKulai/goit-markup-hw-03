@@ -60,12 +60,10 @@ header {
 }
 .d-flex {
   display: flex;
-  /* justify-content: space-around; */
   align-items: center;
 }
 .header-menu {
   display: flex;
-  /* justify-content: space-between; */
   gap: 50px;
   align-items: center;
 }
