@@ -252,6 +252,7 @@ footer {
 
 .location {
   color: var(--location-color);
+  line-height: 1.7;
 }
 .location:hover,
 .location:focus {
@@ -260,6 +261,7 @@ footer {
 
 .info-footer {
   color: var(--address-color);
+  line-height: 1.7;
 }
 .info-footer:hover,
 .info-footer:focus {
